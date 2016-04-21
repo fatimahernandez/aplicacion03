@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/contaminacion.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Contaminación</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   <center>
+   <div>
+    <img src="imagenes/tierra1.jpg" width="100%" height="100%"> </div>
+   </div>
+   </center>
+   
+   
+<div>
+ <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>¿Que es la contaminación?</h2>
+ <p>concepto de contaminación</p>
+
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Causas</h2>
+   <p>Porque hay tanta contaminación</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Consecuencias</h2>
+   <p>Ques es lo que provoca la contaminacion</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Tipos de contaminación</h2>
+   <p>Que tipos de contaminación existen</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Como disminuir la contaminación</h2>
+   <p>Que podemos hacer</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Contaminación en mi comunidad</h2>
+   <p>Tipo de contaminación que existe en mi comunidad</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Visor de Imagenes</h2>
+   <p>Muestra imagenes sobre la contaminación</p>
+   </a>
+  </li>
+ </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+ <div>
+  <img src="imagenes/recicle.png" width="46" height="46">
+ </div>
+ <div>
+  <h4>App 3</h4>
+  <h4>Lucia Fatima Hernandez Ruiz</h4>
+ </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>¿QUE ES LA CONTAMINACIÓN?</h1>
+ </div>
+<div data-role="content" align="center">
+ <div>
+  <p>La contaminación es la introducción de sustancias en un medio que provocan que este sea inseguro o no apto para su uso.
+  La contaminación puede clasificarse según el tipo de fuente de donde proviene, o por la forma de contaminante que emite o medio que contamina.</p>
+
+   <div data-role="collapsible" data-content-theme="false">
+   <h2>Más información</h2>
+   <p>Existen muchos agentes contaminantes entre ellos las sustancias químicas (como plaguicidas, cianuro, herbicidas y otros.), los residuos urbanos, el petróleo, o las radiaciones ionizantes. Todos estos pueden producir enfermedades, daños en los ecosistemas o el medioambiente.</p>
+  <img src="imagenes/1.jpg" width="70%" height="80%">
+  
+  <img src="imagenes/2.jpg" width="50%" height="90%">
+ </div>
+</div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+<h4>App3</h4>
+<div>
+ <img src="imagenes/recicle.png" width="46" height="46">
+</div>
+ <h4>Lucía Fátima Hernández Ruíz</h4>
+ </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>CAUSAS</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p>Nuestro planeta se encuentra expuesto a numerosos contaminantes que perjudican al bienestar y a la salud de los seres vivos que habitan en él.
+La Organización de Naciones Unidas destaca como culpables de la contaminación y el efecto invernadero a las ciudades porque “ellas ocupan el 2% del territorio mundial y producen el 70% de estos gases”. Esta organización advierte que la situación podría empeorar porque muchos países están teniendo un crecimiento muy acelerado, como Brasil. China e India, y a su vez están emitiendo gases contaminantes.Desechos sólidos domésticos,desechos sólidos industriales,exceso de fertilizante y productos químicos,tala,quema,basura,el monóxido de carbono de los vehículos,desagües de aguas negras o contaminadas al mar o ríos</p>
+   <div data-role="collapsible" data-content-theme="false">
+   <h2>Más información</h2>
+    <p>Las principales causas de la contaminación son:
+El tráfico rodado: los coches y camiones son los mayores contaminantes urbanos porque a diario circulan arrojando al aire gases tóxicos perjudiciales para la salud. Estos vehículos contaminan a causa de la combustión de los hidrocarburos que utilizan para moverse, y el desgaste de los frenos y  ruedas.
+En las ciudades existe otra fuente de contaminación como son las construcciones y las demoliciones: estas actividades desprenden polvos y gases que dañan el aire de la zona en que se desarrollan,  y  a su vez contaminan el agua donde arrojan sus desechos.
+Los Combustibles fósiles: el confort  y el bienestar de los habitantes de las grandes ciudades trajo como consecuencia el aumento en el consumo de combustibles fósiles. La producción de carbón, de petróleo y de gas natural crece de la mano del ascenso de los niveles de contaminación del aire, del suelo y del agua del planeta.
+El índice de población mundial ha crecido a distinto ritmo que la tasa de mortalidad, hecho que ha impactado sobre el medioambiente: provocando la ineficiencia en el tratamiento de las aguas residuales domésticas, el aumento del consumo irreflexivo  y la generación de toneladas de basura.</p>
+   <div data-role="collapsible" data-content-theme="false">
+   <h2>Imagenes</h2>
+    <img src="imagenes/contaminacion5.jpg" width="80%" height="80%">
+    <img src="imagenes/contaminacion4.jpg" width="70%" height="90%">
+    </div>
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>App3</h4>
+  <div>
+  <img src="imagenes/recicle.png" width="46" height="46">
+ </div>
+   <h4>Lucía Fátima Hernández Ruíz</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>CONSECUENCIAS</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p>Las consecuencias de la contaminación ambiental es que deteriora cada vez más a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra salud cardiovascular
+por lo que normas estrictas de aire limpio contribuirían a una mejor salud con efectos en gran escala. 
+Otra consecuencia es el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el calentamiento global. La contaminación al medio atenta contra la vida de plantas, animales y personas, genera daños físicos en los individuos, convierte en un elemento no consumible al agua
+y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demás el clima y las actividades realizadas por el ser humano dañándolo y perjudicándole.</p>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/contaminacion.jpg',1)"><img src="imagenes/tierra1.jpg" width="95%" height="100%" id="Image20"></a> 
+    </div>
+   </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>App3</h4>
+  <div>
+  <img src="imagenes/recicle.png" width="46" height="46">
+ </div>
+   <h4>Lucía Fátima Hernández Ruíz</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>TIPOS DE CONTAMINACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h1>Existen diferentes tipos de contaminación aquí te mencionaremos algunos de ellos:</h1>
+    
+    <h3>Contaminación Lumínica</h3>
+    <p>La contaminación lumínica puede definirse como la emisión de flujo luminoso de fuentes artificiales de luz nocturnas en intensidades, direcciones, rangos espectrales u horarios innecesarios para la realización de las actividades previstas en la zona en la que se instalan las luces.</p>
+    <img src="imagenes/luminica.jpg" width="40%" height="50%">
+    <img src="imagenes/luminica2.jpg" width="50%" height="50%">
+    
+    <h3>Contaminación Acustica</h3>
+    <p>Se llama contaminación acústica o contaminación sonora al exceso de sonido que altera las condiciones normales del ambiente en una determinada zona. Si bien el ruido no se acumula, traslada o mantiene en el tiempo como las otras contaminaciones, también puede causar grandes daños en la calidad de vida de las personas si no se controla bien o adecuadamente.</p>
+    <img src="imagenes/acustica1.jpg" width="50%" height="50%">
+    <img src="imagenes/acustica.jpg" width="40%" height="50%">
+    
+   <div data-role="collapsible" data-content-theme="false">
+   <h2>Más información</h2>
+    <h3>Contaminación del Suelo</h3>
+    <p>La contaminación del suelo consiste en la acumulación de sustancias a unos niveles tales que repercuten negativamente en el comportamiento de los suelos. Las sustancias, a esos niveles de concentración, se vuelven tóxicas para los organismos que viven en él. Se trata de una degradación química que provoca la pérdida parcial o total de su productividad.</p>
+    <img src="imagenes/suelo.jpg" width="40%" height="50%">
+    <img src="imagenes/suelo1.jpg" width="50%" height="50%">
+    
+    <h3>Contaminación del Aire</h3>
+    <p>Se entiende por contaminación atmosférica a la presencia en el aire de materias o formas de energía que implican riesgo, daño o molestia grave para las personas y bienes de cualquier naturaleza, así como que puedan atacar a distintos materiales, reducir la visibilidad o producir olores desagradables.</p>
+    <img src="imagenes/aire.jpg" width="50%" height="50%">
+    <img src="imagenes/aire2.jpg" width="40%" height="50%">
+    
+    <h3>Contaminación del Agua</h3>
+    <p>La contaminación hídrica se entiende como la acción de introducir algún material en el agua alterando su calidad y su composición química. Según la Organización Mundial de la Salud el agua está contaminada “cuando su composición se haya modificado de modo que no reúna las condiciones necesarias para el uso, al que se le hubiera destinado en su estado natural”. El agua que procede de ríos, lagos y quebradas es objeto de una severa contaminación, muchas veces producto de las actividades del hombre.</p>
+    <img src="imagenes/agua.jpg" width="40%" height="50%">
+    <img src="imagenes/agua2.jpg" width="50%" height="50%">
+   </div>
+  </div>
+ </div>
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>App3</h4>
+  <div>
+  <img src="imagenes/recicle.png" width="46" height="46">
+ </div>
+   <h4>Lucía Fátima Hernández Ruíz</h4>
+  </div>
+ </div>  
+</div>  
+ 
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>COMO DISMINUIR LA CONTAMINACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h1>Las acciones para prevenir la contaminación atmosférica deben ser hábito cotidiano de todos, en todos los lugares y todo el tiempo, para que realmente sean efectivas. Entre ellas están: </h1>
+    <p>Afinar y dar mantenimiento a los automóviles</p>
+    <p>Evitar la quema de basura y llantas, así como el uso de cohetes artificiales</p>
+    <p>Evitar comprar artículos desechables y plásticos que no son biodegradables</p>
+    <p>No arrojar basura en la calle, bosques y parques, envolverla o taparla bien en la casa</p>
+    <p>Usar racionalmente los plaguicidas</p>
+    <p>Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono</p>
+    <h3>Podemos hacer todo esto para evitar la contaminación hagamos algo tenemos que cuidar nuestro planeta Ayudanos a Cuidarlo!!</h3>
+
+    </div>
+    <img src="imagenes/disminuir.jpg" width="50%" height="50%">
+    <img src="imagenes/disminuir1.jpg" width="50%" height="50%">
+   </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>App3</h4>
+  <div>
+  <img src="imagenes/recicle.png" width="46" height="46">
+ </div>
+   <h4>Lucía Fátima Hernández Ruíz</h4>
+  </div>
+ </div>  
+</div>  
+
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>CONTAMINACIÓN EN MI COMUNIDAD</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p>En mi comunidad existe un tipo de contaminacion del suelo ya que las personas tiran su basura en las calles ya sea de alimentos chatarra y en fin otras cosas</p>
+    <p>y tambien existe una contaminación del agua ya que en la comunidad de Sanata Lucía Existe una presa a donde van las personas a pescar pero tambien la contaminan con basura y encontre que tambien habia llantas de autos</p>
+    </div>
+    <img src="imagenes/comunidad.jpg" width="50%" height="50%">
+    <img src="imagenes/comunidad1.jpg" width="50%" height="50%">
+    <img src="imagenes/comunidad4.jpg" width="50%" height="50%">
+    <img src="imagenes/comunidad2.jpg" width="50%" height="50%">
+   </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>App3</h4>
+  <div>
+  <img src="imagenes/recicle.png" width="46" height="46">
+ </div>
+   <h4>Lucía Fátima Hernández Ruíz</h4>
+  </div>
+ </div>  
+</div> 
+
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>VISOR DE IMAGENES</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Visor de imagenes</h2></div>
+   </div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>App3</h4>
+  <div>
+  <img src="imagenes/recicle.png" width="46" height="46">
+ </div>
+   <h4>Lucía Fátima Hernández Ruíz</h4>
+  </div>
+ </div>  
+</div> 
+
+  
+</body>
+</html>
